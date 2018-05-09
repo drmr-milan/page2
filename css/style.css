@@ -10,11 +10,21 @@ body {
     background-repeat: no-repeat;
 }
 
-.menuIcon {
-    display: flex;
-    height: 100%;
-    margin: 0px auto;
+.menu {
     padding-top: 10px;
+}
+
+.menuDiv {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0px;
+    border-radius: 25px;    
+}
+
+.menu {
+    width: 30px;
+    display: block;
+    margin: 0px auto;
 }
 
 .logo {
