@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: ;
+}
+
+.one {
+    background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    padding-top: 10px;
+}
+
+.menuDiv {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0px;
+    border-radius: 25px;    
+}
+
+.menu {
+    width: 30px;
+    display: block;
+    margin: 0px auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s;
+    
+}
+
+.overlay__content {
+    position: relative;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navA {
+    padding: 10px;
+    font-size: 1.4em;
+    display: block;
+}
+
+.overlay .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 1.7em;
+}
+
+.logo {
+    display: flex;
+    height: 100px;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.pocetnaTextOkvir {
+    display: flex;
+    justify-content: center
+}
+
+.pocetnaText {
+    text-align: center;
+    color: white;
+    padding: 5px 0px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgba(35, 185, 255,0.7);
+    margin: 20px 0px;
+}
+
+.glavni {
+    font-size: 1.3em;
+}
+
+.crveni {
+   color: red;    
+}
+
+.sporedni {
+    font-size: 0.7em;
+}
+
+.hireDugme {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.hire{
+    color: white;
+    background-color: rgba(35, 185, 255,0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.arrowPic {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 20px;
+    opacity: 0.75;
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%   {left:0px; bottom:0px;}
+    25%  {left:0px; bottom:1px;}
+    50%  {left:0px; bottom:2px;}
+    75%  {left:0px; bottom:2px;}
+    100% {left:0px; bottom:1px;}
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+}
+
+.radovi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.rad {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    visibility: hidden;
+}
+
+.dugme {
+    text-align: center;
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+.radText1 {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2px;
+    visibility: hidden;
+}
+
+.radTextDugme {
+    color: white;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 1px 5px 2px 5px;
+}
+
+.radJedan{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/work1.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;     
+}
+
+.skriveni {
+    visibility: hidden;
+}
+
+.rad:hover {
+    background-image: none;
+    background-color: #4E007C;    
+}
+
+.rad:hover .radTextDugme {
+    border: 1px solid red;
+}
+
+.rad:hover .skriveni{
+    visibility: visible;
+}
+
+.radDva {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/work2.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.radTri {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/work3.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.three > h2 {
+    color: white;
+}
+
+.prostorOMeni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.oMeni {
+    align-self: center;
+}
+
+.ja {
+    height: 125px;
+    margin: 0px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.oMeni:first-child {
+    margin-left: 5px;
+}
+
+.oMeni:last-child {
+    margin-right: 15px;
+}
+
+h5 {
+    color: white;
+    margin: 10px 0px; 
+}
+
+p {
+    color: white;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.forma {
+    padding: 0px 10px;
+    margin: 0px 0px;
+    margin-bottom: 40px;
+}
+
+.four > h2 {
+    color: white;
+}
+
+h4 {
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.forma {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    width: 340px;
+    padding: 0;
+    padding: 5px;
+}
+
+textarea {
+    color: white;
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    font-family: sans-serif;
+}
+
+input {
+    color: white;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+button {
+    display: flex;
+    margin: 0px auto;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.five {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divLogoFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.logoFooter {
+    margin-top: 20px;
+    height: 67px;
+}
+
+.sMedia {
+    display: flex;
+    justify-content: center;
+}
+
+.sMediaLogo {
+    height: 40px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/*
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!! VRATITI NA PC VERZIJI !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.bezBoje {
+    filter: grayscale(100%);
+}
+*/
+
+.sMediaLogo:hover {
+    filter: none;
+}
+
+.textProstorFooter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.noneA {
+    visibility: visible;
+}
