@@ -4,6 +4,7 @@ let idi1 = document.getElementById("zatvari1");
 let idi2 = document.getElementById("zatvari2");
 let idi3 = document.getElementById("zatvari3");
 let idi4 = document.getElementById("zatvari4");
+let Btn = document.getElementById("subBtn");
 
 buttonOpen.addEventListener("click", function openNav() {
                              document.getElementById('nav').style.height = "100%";       
@@ -28,6 +29,7 @@ idi3.addEventListener("click", function closeNav() {
 idi4.addEventListener("click", function closeNav() {
     document.getElementById('nav').style.height = "0%";
 });
+
 
 /*
 const nodemailer = require('nodemailer');
