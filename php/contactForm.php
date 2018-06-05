@@ -1,9 +1,4 @@
 <?php
-    
-    <Location "/">
-        AllowMethods GET POST OPTIONS
-    </Location>
-
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $emailFrom = $_POST['email'];
