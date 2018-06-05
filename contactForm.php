@@ -10,6 +10,5 @@
         $txt = "Email sent from ".$name.".\n\n".$message;
         
         mail($emailTo, $emailTitle, $txt, $headers);
-        header("Location: index.html?mailsend");
     }
 ?>
